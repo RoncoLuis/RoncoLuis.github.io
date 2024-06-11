@@ -1,0 +1,32 @@
+:root{
+    /* Polar night colors */
+    --nord0: #4C566A;
+    --nord1: #434C5E;
+    --nord2: #3B4252;
+    --nord3: #2E3440;
+
+    /* Snow Storm */
+    --nord4: #ECEFF4;
+    --nord5: #E5E9F0;
+    --nord6: #D8DEE9;
+    
+
+}
+
+body{
+    background-color: var(--nord4);
+}
+
+.mybackground{
+    background-color: var(--nord2);
+}
+
+.nav-item a{
+    color: white;
+    font-weight: bold;
+}
+
+.debug{
+    outline: solid 1px red;
+}
+
