@@ -30,6 +30,6 @@ python3 -m http.server 8080
 
 - Bootstrap Icons are loaded from CDN (`bootstrap-icons@1.11.3`). All other assets are vendored.
 - The header, navbar, and footer share the `.mybackground` class (Nord dark background with white text).
-- Blog entries live under `blog-section/` and use the same header/navbar/footer structure as `index.html`. CSS/JS paths inside `blog-section/` use relative paths starting with `css/` and `js/` — these assume the file is served from the repo root or paths are adjusted accordingly.
+- Blog entries live under `blog-section/` and use the same header/navbar/footer structure as `index.html`. CSS/JS paths inside `blog-section/` use `../css/` and `../js/` (parent-relative). `blog_entry.html` is the legacy template; `blog_1.html` is the current live entry format with the Inter font added.
 - `index_old.html` and `css/style_old.css` are legacy files kept for reference.
 - The `.debug` class in `style.css` (red outline) is a utility for layout debugging.

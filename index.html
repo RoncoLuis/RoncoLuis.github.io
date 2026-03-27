@@ -3,277 +3,359 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>luisronquillo.com</title>
-    <!-- bootstrap v5.3.3 -->
+    <title>Luis Ronquillo — Java Developer</title>
+    <!-- Bootstrap v5.3.3 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- bootstrap icons -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- inter font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="">
-    <div class="container">
-      <!-- header -->
-      <div class="row mybackground align-items-center py-5">
-        <div class="col-auto ms-4">
-          <img src="img/profile_img.png" class="rounded-circle border border-2 border-light" style="height: 90px; width: 90px; object-fit: cover;" alt="Luis Ronquillo" />
-        </div>
-        <div class="col text-white">
-          <h1 class="mb-0 fw-700">Luis Ronquillo</h1>
-          <p class="lead mb-2">Java developer journey, blog and portfolio</p>
-          <div class="header-social">
-            <a href="https://github.com/RoncoLuis" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/roncoluis/" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
-            <a href="https://x.com/RoncoLuis" class="text-white" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i> X</a>
-          </div>
-        </div>
-      </div>
-      <!-- end header -->
+  <body>
 
-      <!-- navbar -->
-      <div class="row mybackground">
-        <div class="col">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list" style="color: white"></i></button>
-              
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#notes">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
-                </ul>
-              </div>
-
-            </div>
-          </nav>
+    <!-- ======================================================
+         Navbar
+    ====================================================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand nav-brand" href="#">LR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navMenu" aria-controls="navMenu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav gap-1 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#notes">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item ms-2">
+              <a href="resources/CV_JavaDeveloper_LuisRonquillo.pdf" class="btn btn-accent btn-sm" download>
+                CV <i class="bi bi-download ms-1"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- end navbar end -->
+    </nav>
 
-      <!-- projects -->
-      <div id="projects" class="row mt-5">
-        <div class="col-12 text-center">
-          <h3 class="section-heading">Projects</h3>
-          <p class="section-intro">A selection of things I've built, mostly with the Java ecosystem.</p>
-        </div>
+    <!-- ======================================================
+         Hero
+    ====================================================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
 
-        <div class="col-lg-4 mt-2 d-flex align-items-stretch">
-          <div class="card h-100 card-hover">
-            <img src="img/projects/mrs-wellbeing.svg" class="card-img-top p-3 card-img-preview" alt="MRS Wellbeing">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">MRS Wellbeing</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Recommendation system with sentiment analysis</h6>
-              <p class="card-text flex-grow-1">Master's degree project: a recommendation system that analyzes the emotional state of elderly users to suggest images, songs, and movies that match their feelings.</p>
-              <div class="mb-2">
-                <span class="badge badge-other me-1">Python</span>
-                <span class="badge badge-other me-1">ML</span>
-                <span class="badge badge-other">Sentiment Analysis</span>
-              </div>
-              <div class="text-center mt-2">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-nord-outline btn-sm">View project</a>
-              </div>
+          <div class="col-lg-7 fade-in">
+            <p class="hero-eyebrow">Java Developer</p>
+            <h1 class="hero-title">Luis<br>Ronquillo</h1>
+            <p class="hero-subtitle">
+              Building reliable Java backends.<br>
+              Writing about code, career, and life in between.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-accent">View Projects</a>
+              <a href="#notes" class="btn btn-outline-accent">Read Blog</a>
+            </div>
+            <div class="hero-socials">
+              <a href="https://github.com/RoncoLuis" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/roncoluis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://x.com/RoncoLuis" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+                <i class="bi bi-twitter-x"></i>
+              </a>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 mt-2 d-flex align-items-stretch">
-          <div class="card h-100 card-hover">
-            <img src="img/projects/employee-app.svg" class="card-img-top p-3 card-img-preview" alt="Employee App">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Employee App</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Employee management web application</h6>
-              <p class="card-text flex-grow-1">Full-stack web application for employee management built with Spring Boot and Thymeleaf, featuring CRUD operations, role-based access, and persistence with Hibernate.</p>
-              <div class="mb-2">
-                <span class="badge badge-java me-1">Spring Boot</span>
-                <span class="badge badge-java me-1">Hibernate</span>
-                <span class="badge badge-java">Thymeleaf</span>
-              </div>
-              <div class="text-center mt-2">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-nord-outline btn-sm">View project</a>
-              </div>
+          <div class="col-lg-5 hero-photo-col fade-in fade-in-delay">
+            <div class="hero-photo-wrap">
+              <img src="img/profile_img.png" alt="Luis Ronquillo" class="hero-photo" />
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 mt-2 d-flex align-items-stretch">
-          <div class="card h-100 card-hover">
-            <img src="img/projects/multimedia-project.svg" class="card-img-top p-3 card-img-preview" alt="Multimedia Project">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Multimedia Project</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Media management REST API</h6>
-              <p class="card-text flex-grow-1">REST API for multimedia content management, including upload, retrieval, and organization of media assets, deployed on AWS with Spring Boot.</p>
-              <div class="mb-2">
-                <span class="badge badge-java me-1">Spring Boot</span>
-                <span class="badge badge-cloud me-1">AWS</span>
-                <span class="badge badge-other">REST API</span>
-              </div>
-              <div class="text-center mt-2">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-nord-outline btn-sm">View project</a>
-              </div>
-            </div>
-          </div>
         </div>
-
       </div>
-      <!-- end projects -->
+    </section>
 
-      <hr class="section-divider">
+    <!-- ======================================================
+         Projects
+    ====================================================== -->
+    <section id="projects" class="section-block reveal">
+      <div class="container">
 
-      <!-- notes -->
-      <div id="notes" class="row mt-4">
-        <div class="col-12 text-center">
-          <h3 class="section-heading">My Notes</h3>
-          <p class="section-intro">Things I've been thinking about, learning, and writing down.</p>
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Work</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">A selection of things I've built, mostly with the Java ecosystem.</p>
         </div>
 
-        <div class="col-lg-4 mt-2 d-flex align-items-stretch">
-          <div class="card h-100 card-hover">
-            <img src="img/blog/productivity/productivity.svg" class="card-img-top p-3 card-img-preview" alt="Productivity">
-            <div class="card-body card-note d-flex flex-column">
-              <h5 class="card-title">Productivity for developers</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Habits and tools that actually work</h6>
-              <p class="card-text flex-grow-1">Notes on the productivity methods and tools I've tried as a developer — what helped, what didn't, and how I balance deep work with family life.</p>
-              <div class="text-center mt-2">
-                <a href="blog-section/blog_entry.html" class="btn btn-nord-outline btn-sm">Read more</a>
+        <div class="row g-4">
+
+          <div class="col-lg-4 d-flex">
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img src="img/projects/mrs-wellbeing.svg" alt="MRS Wellbeing" class="project-img">
+              </div>
+              <div class="project-body">
+                <h5 class="project-title">MRS Wellbeing</h5>
+                <p class="project-subtitle">Recommendation system with sentiment analysis</p>
+                <p class="project-desc">Master's degree project: a recommendation system that analyzes the emotional state of elderly users to suggest images, songs, and movies that match their feelings.</p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">ML</span>
+                  <span class="tag">Sentiment Analysis</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View project <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 mt-2 d-flex align-items-stretch">
-          <div class="card h-100 card-hover">
-            <img src="img/blog/financial-ed/financial_education.svg" class="card-img-top p-3 card-img-preview" alt="Financial Education">
-            <div class="card-body card-note d-flex flex-column">
-              <h5 class="card-title">Financial education</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Personal finance from a developer's perspective</h6>
-              <p class="card-text flex-grow-1">Key concepts I've learned about personal finance — budgeting, saving, and investing — explained simply without financial jargon.</p>
-              <div class="text-center mt-2">
-                <a href="blog-section/blog_entry.html" class="btn btn-nord-outline btn-sm">Read more</a>
+          <div class="col-lg-4 d-flex">
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img src="img/projects/employee-app.svg" alt="Employee App" class="project-img">
+              </div>
+              <div class="project-body">
+                <h5 class="project-title">Employee App</h5>
+                <p class="project-subtitle">Employee management web application</p>
+                <p class="project-desc">Full-stack web application for employee management built with Spring Boot and Thymeleaf, featuring CRUD operations, role-based access, and persistence with Hibernate.</p>
+                <div class="project-tags">
+                  <span class="tag tag-java">Spring Boot</span>
+                  <span class="tag tag-java">Hibernate</span>
+                  <span class="tag tag-java">Thymeleaf</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View project <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 mt-2 d-flex align-items-stretch">
-          <div class="card h-100 card-hover">
-            <img src="img/blog/draft-journal/aplicacion.png" class="card-img-top p-3 card-img-preview" alt="Draft Journal">
-            <div class="card-body card-note d-flex flex-column">
-              <h5 class="card-title">Draft journal</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Writing as a thinking tool</h6>
-              <p class="card-text flex-grow-1">Why I started keeping a draft journal and how writing regularly has helped me think more clearly, both in code and in everyday decisions.</p>
-              <div class="text-center mt-2">
-                <a href="blog-section/blog_entry.html" class="btn btn-nord-outline btn-sm">Read more</a>
+          <div class="col-lg-4 d-flex">
+            <div class="project-card">
+              <div class="project-img-wrap">
+                <img src="img/projects/multimedia-project.svg" alt="Multimedia Project" class="project-img">
+              </div>
+              <div class="project-body">
+                <h5 class="project-title">Multimedia Project</h5>
+                <p class="project-subtitle">Media management REST API</p>
+                <p class="project-desc">REST API for multimedia content management, including upload, retrieval, and organization of media assets, deployed on AWS with Spring Boot.</p>
+                <div class="project-tags">
+                  <span class="tag tag-java">Spring Boot</span>
+                  <span class="tag tag-cloud">AWS</span>
+                  <span class="tag">REST API</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View project <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
+
         </div>
-
-      </div><!-- end notes -->
-
-      <hr class="section-divider">
-
-      <!-- about me -->
-      <div id="about" class="row mt-4 mb-5">
-        <h3 class="text-center section-heading">About me</h3>
-
-        <!-- Avatar + name + CTA -->
-        <div class="col-lg-3 text-center mb-4">
-          <img src="img/profile_img.png" class="about-avatar" alt="Luis Ronquillo" />
-          <h5 class="mt-3 mb-0 fw-bold">Luis Ronquillo</h5>
-          <p class="text-muted small mb-3">Java Developer</p>
-          <a href="resources/CV_JavaDeveloper_LuisRonquillo.pdf" class="btn btn-nord btn-sm" download>
-            <i class="bi bi-download me-1"></i> Download CV
-          </a>
-        </div>
-
-        <!-- Bio + skills -->
-        <div class="col-lg-9">
-          <p>
-            Java developer with 3+ years of experience building web applications using Spring Boot, Hibernate, Thymeleaf, and AWS.
-            Currently completing a master's degree in computer science, where I've worked on projects involving machine learning and recommendation systems.
-          </p>
-          <p>
-            Outside of work I read, write, and spend time with my family.
-            I'm a husband and father, and I believe that a balanced life makes for a better developer.
-          </p>
-
-          <hr class="my-3">
-
-          <div class="mb-3">
-            <p class="skill-group-label text-uppercase fw-bold mb-2">Backend</p>
-            <span class="skill-pill">Java Core</span>
-            <span class="skill-pill">Spring Boot 3</span>
-            <span class="skill-pill">Spring Framework 6</span>
-            <span class="skill-pill">Hibernate / JPA</span>
-            <span class="skill-pill">Java EE</span>
-            <span class="skill-pill">Thymeleaf</span>
-          </div>
-
-          <div>
-            <p class="skill-group-label text-uppercase fw-bold mb-2">Cloud & Other</p>
-            <span class="skill-pill">AWS</span>
-            <span class="skill-pill">REST APIs</span>
-            <span class="skill-pill">Git</span>
-            <span class="skill-pill">Machine Learning</span>
-          </div>
-        </div>
-
       </div>
-   
-       
+    </section>
 
-    </div><!-- end container -->
-  
-    <footer class="footer mybackground">
-      <div class="footer-accent"></div>
+    <!-- ======================================================
+         Blog / Notes
+    ====================================================== -->
+    <section id="notes" class="section-block section-alt reveal">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Writing</p>
+          <h2 class="section-title">My Notes</h2>
+          <p class="section-sub">Things I've been thinking about, learning, and writing down.</p>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-lg-4 d-flex">
+            <div class="note-card">
+              <img src="img/blog/productivity/productivity.svg" alt="Productivity" class="note-img">
+              <div class="note-body">
+                <h5 class="note-title">Productivity for developers</h5>
+                <p class="note-sub">Habits and tools that actually work</p>
+                <p class="note-desc">Notes on the productivity methods and tools I've tried as a developer — what helped, what didn't, and how I balance deep work with family life.</p>
+                <a href="blog-section/blog_entry.html" class="note-link">
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex">
+            <div class="note-card">
+              <img src="img/blog/financial-ed/financial_education.svg" alt="Financial Education" class="note-img">
+              <div class="note-body">
+                <h5 class="note-title">Financial education</h5>
+                <p class="note-sub">Personal finance from a developer's perspective</p>
+                <p class="note-desc">Key concepts I've learned about personal finance — budgeting, saving, and investing — explained simply without financial jargon.</p>
+                <a href="blog-section/blog_entry.html" class="note-link">
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex">
+            <div class="note-card">
+              <img src="img/blog/draft-journal/aplicacion.png" alt="Draft Journal" class="note-img">
+              <div class="note-body">
+                <h5 class="note-title">Draft journal</h5>
+                <p class="note-sub">Writing as a thinking tool</p>
+                <p class="note-desc">Why I started keeping a draft journal and how writing regularly has helped me think more clearly, both in code and in everyday decisions.</p>
+                <a href="blog-section/blog_entry.html" class="note-link">
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         About
+    ====================================================== -->
+    <section id="about" class="section-block reveal">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Background</p>
+          <h2 class="section-title">About me</h2>
+        </div>
+
+        <div class="row align-items-start g-5">
+
+          <div class="col-lg-5">
+            <p class="about-text">
+              Java developer with 3+ years of experience building web applications using
+              Spring Boot, Hibernate, Thymeleaf, and AWS. Currently completing a master's
+              degree in computer science, where I've worked on projects involving machine
+              learning and recommendation systems.
+            </p>
+            <p class="about-text">
+              Outside of work I read, write, and spend time with my family. I'm a husband
+              and father, and I believe that a balanced life makes for a better developer.
+            </p>
+            <a href="resources/CV_JavaDeveloper_LuisRonquillo.pdf" class="btn btn-accent mt-2" download>
+              <i class="bi bi-download me-2"></i>Download CV
+            </a>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="skills-block">
+              <p class="skills-label">Backend</p>
+              <div class="skills-row">
+                <span class="skill-tag">Java Core</span>
+                <span class="skill-tag">Spring Boot 3</span>
+                <span class="skill-tag">Spring Framework 6</span>
+                <span class="skill-tag">Hibernate / JPA</span>
+                <span class="skill-tag">Java EE</span>
+                <span class="skill-tag">Thymeleaf</span>
+              </div>
+            </div>
+            <div class="skills-block">
+              <p class="skills-label">Cloud & Other</p>
+              <div class="skills-row">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         Footer
+    ====================================================== -->
+    <footer class="site-footer">
+      <div class="footer-top-line"></div>
       <div class="container py-5">
         <div class="row gy-4">
 
           <div class="col-sm-6 col-lg-3">
-            <p class="footer-col-heading text-uppercase fw-bold mb-3">Navigate</p>
+            <p class="footer-heading">Navigate</p>
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a href="#projects" class="footer-link"><i class="bi bi-chevron-right me-1" style="font-size: 0.7rem;"></i>Projects</a></li>
-              <li class="mb-2"><a href="#notes" class="footer-link"><i class="bi bi-chevron-right me-1" style="font-size: 0.7rem;"></i>Blog</a></li>
-              <li><a href="#about" class="footer-link"><i class="bi bi-chevron-right me-1" style="font-size: 0.7rem;"></i>About me</a></li>
+              <li><a href="#projects" class="footer-link">Projects</a></li>
+              <li><a href="#notes" class="footer-link">Blog</a></li>
+              <li><a href="#about" class="footer-link">About me</a></li>
             </ul>
           </div>
 
           <div class="col-sm-6 col-lg-3">
-            <p class="footer-col-heading text-uppercase fw-bold mb-3">Resources</p>
+            <p class="footer-heading">Resources</p>
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a href="resources/CV_JavaDeveloper_LuisRonquillo.pdf" class="footer-link" download><i class="bi bi-download me-2"></i>Download CV</a></li>
-              <li><a href="https://roncoluis.notion.site/Luis-Ronquillo-Blog-d7c65a0a340f4692942be16ac8924a29?pvs=4" class="footer-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-journal-text me-2"></i>Notion notes</a></li>
+              <li>
+                <a href="resources/CV_JavaDeveloper_LuisRonquillo.pdf" class="footer-link" download>
+                  Download CV
+                </a>
+              </li>
+              <li>
+                <a href="https://roncoluis.notion.site/Luis-Ronquillo-Blog-d7c65a0a340f4692942be16ac8924a29?pvs=4"
+                   class="footer-link" target="_blank" rel="noopener noreferrer">
+                  Notion notes
+                </a>
+              </li>
             </ul>
           </div>
 
           <div class="col-sm-6 col-lg-3">
-            <p class="footer-col-heading text-uppercase fw-bold mb-3">Connect</p>
+            <p class="footer-heading">Connect</p>
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a href="https://github.com/RoncoLuis" class="footer-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-github me-2"></i>GitHub</a></li>
-              <li class="mb-2"><a href="https://www.linkedin.com/in/roncoluis/" class="footer-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin me-2"></i>LinkedIn</a></li>
-              <li><a href="https://x.com/RoncoLuis" class="footer-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x me-2"></i>X / Twitter</a></li>
+              <li><a href="https://github.com/RoncoLuis" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/roncoluis/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://x.com/RoncoLuis" class="footer-link" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
             </ul>
           </div>
 
           <div class="col-sm-6 col-lg-3">
-            <p class="footer-col-heading text-uppercase fw-bold mb-3">Contact</p>
-            <a href="mailto:luiseduardoronquillo@gmail.com" class="footer-link d-block"><i class="bi bi-envelope me-2"></i>luiseduardoronquillo@gmail.com</a>
+            <p class="footer-heading">Contact</p>
+            <a href="mailto:luiseduardoronquillo@gmail.com" class="footer-link">
+              luiseduardoronquillo@gmail.com
+            </a>
           </div>
 
         </div>
       </div>
-      <div class="text-center bg-dark py-2">
-        <small class="text-muted">2025 © Luis Ronquillo</small>
+      <div class="footer-bottom">
+        <small>2025 © Luis Ronquillo</small>
       </div>
     </footer>
-    
-    <!-- bootstrap.bundle.min v5.3.3 -->
+
+    <!-- Bootstrap bundle v5.3.3 -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- fontawesome -->
-    <!-- <script src="https://kit.fontawesome.com/ca81b2d607.js" crossorigin="anonymous"></script> -->
+    <script>
+      // Frosted glass navbar on scroll
+      const nav = document.getElementById('mainNav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('nav-scrolled', window.scrollY > 50);
+      }, { passive: true });
+
+      // Scroll reveal for sections
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+
   </body>
 </html>
