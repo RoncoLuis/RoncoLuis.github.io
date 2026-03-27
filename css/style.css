@@ -616,6 +616,60 @@ a {
 }
 
 /* ============================================================
+   Dark Mode
+   ============================================================ */
+
+[data-theme="dark"] {
+    --bg:           #1A1917;
+    --bg-alt:       #111009;
+    --surface:      #242220;
+    --text:         #EDEBE7;
+    --text-muted:   #9C9591;
+    --text-light:   #6B6560;
+    --border:       #2E2C2A;
+    --accent:       #52B788;
+    --accent-hover: #74C69D;
+}
+
+[data-theme="dark"] #mainNav.nav-scrolled {
+    background: rgba(26, 25, 23, 0.9);
+}
+
+[data-theme="dark"] .tag-java {
+    background-color: #1E2A3A;
+    color: #93C5FD;
+    border-color: #1D4ED8;
+}
+
+[data-theme="dark"] .tag-cloud {
+    background-color: #142E20;
+    color: var(--accent);
+    border-color: #2D6A4F;
+}
+
+/* Toggle button */
+.btn-theme-toggle {
+    background: none;
+    border: 1.5px solid var(--border);
+    color: var(--text-muted);
+    border-radius: 7px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.btn-theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: transparent;
+}
+
+/* ============================================================
    Debug
    ============================================================ */
 

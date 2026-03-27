@@ -11,6 +11,7 @@
     <!-- Plus Jakarta Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}());</script>
   </head>
   <body>
 
@@ -34,6 +35,11 @@
               <a href="resources/CV_JavaDeveloper_LuisRonquillo.pdf" class="btn btn-accent btn-sm" download>
                 CV <i class="bi bi-download ms-1"></i>
               </a>
+            </li>
+            <li class="nav-item ms-1">
+              <button id="themeToggle" class="btn-theme-toggle" aria-label="Toggle dark mode">
+                <i class="bi bi-moon"></i>
+              </button>
             </li>
           </ul>
         </div>
@@ -355,6 +361,23 @@
       }, { threshold: 0.08 });
 
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Dark mode toggle
+      const themeToggle = document.getElementById('themeToggle');
+      const htmlEl = document.documentElement;
+
+      function updateIcon(theme) {
+        themeToggle.querySelector('i').className = theme === 'dark' ? 'bi bi-sun' : 'bi bi-moon';
+      }
+
+      updateIcon(htmlEl.getAttribute('data-theme') || 'light');
+
+      themeToggle.addEventListener('click', () => {
+        const next = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        htmlEl.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateIcon(next);
+      });
     </script>
 
   </body>
