@@ -616,6 +616,230 @@ a {
 }
 
 /* ============================================================
+   Blog Article Page
+   ============================================================ */
+
+.article-hero {
+    padding: 7rem 0 3rem;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.article-hero-inner {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 1.75rem;
+    transition: color 0.15s ease;
+}
+
+.back-link:hover {
+    color: var(--accent);
+}
+
+.article-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.article-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.article-lead {
+    font-size: 1.07rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+    max-width: 600px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+}
+
+.article-author-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.article-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+}
+
+.article-author-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.article-date {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.article-share {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.article-share a {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.article-share a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.article-featured-wrap {
+    background-color: var(--bg-alt);
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.article-featured-img {
+    display: block;
+    max-width: 740px;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 360px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.article-body {
+    padding: 3.5rem 0 5rem;
+}
+
+.article-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.article-content p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.85;
+    margin-bottom: 1.4rem;
+}
+
+.article-content h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -0.025em;
+    margin-top: 2.75rem;
+    margin-bottom: 0.9rem;
+}
+
+.article-content h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.article-content strong {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.article-content blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.9rem 1.4rem;
+    margin: 2rem 0;
+    background-color: var(--bg-alt);
+    border-radius: 0 8px 8px 0;
+}
+
+.article-content blockquote p {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.7;
+}
+
+.article-content ul,
+.article-content ol {
+    color: var(--text-muted);
+    padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+.article-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border);
+}
+
+.article-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem auto;
+    max-width: 680px;
+}
+
+.article-tags-section {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* ============================================================
    Dark Mode
    ============================================================ */
 
